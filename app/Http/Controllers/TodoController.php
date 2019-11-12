@@ -106,7 +106,7 @@ class TodoController extends Controller
         // dd($this->todo->find($id)->fill($input));
         $this->todo->find($id)->fill($input)->save();
         // SQL!! ID 1
-        return redirect()->to('todo');
+        return redirect()->to('todo.index');
     }
 
     /**
